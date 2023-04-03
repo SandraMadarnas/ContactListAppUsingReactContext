@@ -19,7 +19,7 @@ const Contactos = () => {
             // setLista(respuestaJson)
             actions.funcionCarga()
         }
-        funcionCarga() //aquí llamo a la función asíncrono
+        funcionCarga() //aquí llamo a la función asíncrona
 
     }, [refresh])
 
