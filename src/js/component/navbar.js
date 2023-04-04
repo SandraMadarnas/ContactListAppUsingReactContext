@@ -11,11 +11,11 @@ export const Navbar = () => {
             Contact List App Using React & Context
           </span>
         </Link>
-        <div className="ml-auto">
+        {/* <div className="ml-auto">
           <Link to="/demo">
             <button className="btn btn-sm btn-secondary">MENU</button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

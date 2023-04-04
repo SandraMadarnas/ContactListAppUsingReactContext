@@ -104,9 +104,7 @@ export function contactActions(getStore, getActions, setStore) {
                 }) */
 
       //2do método async-await en cascada
-      let respuesta = await fetch(
-        "https://assets.breatheco.de/apis/fake/contact/agenda"
-      );
+      let respuesta = await fetch("https://assets.breatheco.de/apis/fake/contact/agenda");
 
       if (respuesta.ok) {
         let respuestaJSON = await respuesta.json(); //proceso puede tomar tiempo

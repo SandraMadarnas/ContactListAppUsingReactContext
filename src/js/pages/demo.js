@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-
 import { Context } from "../store/appContext";
 
 export const Demo = () => {
@@ -11,11 +10,7 @@ export const Demo = () => {
       <ul className="list-group">
         {store.demo.map((item, index) => {
           return (
-            <li
-              key={index}
-              className="list-group-item d-flex justify-content-between"
-              style={{ background: item.background }}
-            >
+            <li key={index} className="list-group-item d-flex justify-content-between" style={{ background: item.background }}>
               <Link to={"/single/" + index}>
                 <span>
                   Link to: {item.title} - color: {item.background}
@@ -31,9 +26,7 @@ export const Demo = () => {
                 ) : null
               }
               <button
-                className="btn btn-success"
-                onClick={() => actions.changeColor(index, "orange")}
-              >
+                className="btn btn-success" onClick={() => actions.changeColor(index, "black")}>
                 Change Color
               </button>
             </li>
@@ -42,7 +35,7 @@ export const Demo = () => {
       </ul>
       <br />
       <Link to="/">
-        <button className="btn btn-primary">Back home</button>
+        <button className="btn btn-primary">Back Home</button>
       </Link>
     </div>
   );

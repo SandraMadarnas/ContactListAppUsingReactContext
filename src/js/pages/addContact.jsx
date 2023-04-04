@@ -15,7 +15,7 @@ const AddContact = () => {
     useEffect(() => { }, [data.full_name, data.phone, data.email, data.address])
 
     return (
-        <div className="container-fluid d-flex flex-column align-items-center p-5 w-100">
+        <div className="container-fluid d-flex flex-column align-items-center p-5 mb-4 w-100 bg-custom">
             <div className="row pb-3 text-center">
                 <h1>Add New Contact Information</h1>
             </div>

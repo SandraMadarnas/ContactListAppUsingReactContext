@@ -34,7 +34,7 @@ const Contactos = () => {
                     </button>
                 </div>
             </div>
-            <div className="row d-flex justify-content-center w-100">
+            <div className="row d-flex justify-content-center w-100 bg-custom mb-4">
                 <div className="col-12 col-md-8 col-lg-6 w-100 border">
                     <ul className="list-group">
                         {store.listaContactos && store.listaContactos.length > 0 ? (
@@ -42,13 +42,14 @@ const Contactos = () => {
                                 return (
                                     <div key={index} className="row border-bottom py-3">
                                         <div className="col-2">
-                                            <img className="img-thumbnail" src="https://imagenes.20minutos.es/files/image_990_v3/uploads/imagenes/2023/03/09/bad-bunny.jpeg"></img>
+                                            <img className="img-thumbnail" src="https://imagenes.20minutos.es/files/image_990_v3/uploads/imagenes/2023/03/09/bad-bunny.jpeg" />
+                                            {/* <img className="img-thumbnail" src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-No-Background.png" /> */}
                                         </div>
                                         <div className="col-8">
                                             <h3 className="mb-3">{item.full_name}</h3>
-                                            <p className="text-secondary"><i class="fas fa-map-marker-alt"></i><span className="ms-3">{item.address}</span></p>
-                                            <p className="text-secondary"><i class="fas fa-at"></i><span className="ms-3">{item.email}</span></p>
-                                            <p className="text-secondary"><i class="fas fa-phone"></i><span className="ms-3">{item.phone}</span></p>
+                                            <p className="text-white"><i class="fas fa-map-marker-alt text-secondary"></i><span className="ms-3">{item.address}</span></p>
+                                            <p className="text-white"><i class="fas fa-at text-secondary"></i><span className="ms-3">{item.email}</span></p>
+                                            <p className="text-white"><i class="fas fa-phone text-secondary"></i><span className="ms-3">{item.phone}</span></p>
                                         </div>
                                         <div className="col-2 d-flex align-items-center justify-content-end">
                                             <button

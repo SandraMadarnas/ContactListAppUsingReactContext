@@ -21,7 +21,7 @@ export const Single = (props) => {
       <p>Variable from Flux: {store.exampleObj.msg}</p>
       <Link to="/">
         <span className="btn btn-primary btn-lg" href="#" role="button">
-          Back home
+          Back Home
         </span>
       </Link>
     </div>

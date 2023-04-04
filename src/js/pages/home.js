@@ -14,12 +14,9 @@ export const Home = () => {
       <p>
         <img src={rigoImageUrl} />
       </p>
-      <button
-        type="button"
-        onClick={() => {
+      <button type="button" onClick={() => {
           actions.login();
-        }}
-      >
+        }}>
         Login
       </button>
     </div>
